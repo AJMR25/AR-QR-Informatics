@@ -1,1 +1,1 @@
-# AR-QR-Informatics
+# School Project
