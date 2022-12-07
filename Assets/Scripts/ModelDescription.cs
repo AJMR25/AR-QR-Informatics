@@ -11,7 +11,7 @@ public class ModelDescription : MonoBehaviour
 
     void Start()
     {
-        int model = PlayerPrefs.GetInt("model", 5);
+        int model = PlayerPrefs.GetInt("model", 6);
         DisplayDescription(model);
     }
 

@@ -156,8 +156,14 @@ public class QRCodeScanner : MonoBehaviour
             return 4;
 
         }
+        if (_result.Contains("arts"))
+        {
 
-        return 5;
+            return 5;
+
+        }
+
+        return 6;
 
     }
 
