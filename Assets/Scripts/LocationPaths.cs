@@ -8,7 +8,7 @@ public class LocationPaths : MonoBehaviour
     [SerializeField] private GameObject[] pathLocationsImages;
     //private bool ceaActive, chsActive, citeActive, cmaActive, cssActive;
     [SerializeField] private GameObject pathImages, mapImage;
-    private Sprite ceaPath, chsPath, citePath, cmaPath, cssPath, imageDefault;
+    private Sprite ceaPath, chsPath, citePath, cmaPath, cssPath, casPath, imageDefault;
 
     private void Start()
     {
@@ -19,6 +19,7 @@ public class LocationPaths : MonoBehaviour
         citePath = pathLocationsImages[2].GetComponent<Image>().sprite;
         cmaPath = pathLocationsImages[3].GetComponent<Image>().sprite;
         cssPath = pathLocationsImages[4].GetComponent<Image>().sprite;
+        casPath = pathLocationsImages[5].GetComponent<Image>().sprite;
     }
     public void LocationOnClick(Button depButton)
     {
@@ -53,7 +54,13 @@ public class LocationPaths : MonoBehaviour
             mapImage.GetComponent<Image>().sprite = cssPath;
 
         }
-        
+        if (depButton.name.Contains("CAS"))
+        {
+
+            mapImage.GetComponent<Image>().sprite = casPath;
+
+        }
+
     }
 
 }
